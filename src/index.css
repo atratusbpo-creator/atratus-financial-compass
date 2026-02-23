@@ -6,44 +6,53 @@
 
 @layer base {
   :root {
-    --background: 220 30% 8%;
-    --foreground: 210 20% 92%;
+    /* 60% - Claridade e Respiro: Branco Gelo (#F8F9FA) */
+    --background: 210 17% 98%;
+    /* 30% - Autoridade: Azul Oxford (#0B1221) for primary text on light */
+    --foreground: 221 50% 9%;
 
-    --card: 220 28% 12%;
-    --card-foreground: 210 20% 92%;
+    --card: 210 17% 98%; /* Branco Gelo */
+    --card-foreground: 221 50% 9%; /* Azul Oxford */
 
-    --popover: 220 28% 12%;
-    --popover-foreground: 210 20% 92%;
+    --popover: 210 17% 98%;
+    --popover-foreground: 221 50% 9%;
 
-    --primary: 45 80% 55%;
-    --primary-foreground: 220 30% 8%;
+    /* 30% - Autoridade: Azul Oxford (#0B1221) as Primary */
+    --primary: 221 50% 9%;
+    --primary-foreground: 210 17% 98%;
 
-    --secondary: 220 25% 18%;
-    --secondary-foreground: 210 20% 92%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 221 50% 9%;
 
-    --muted: 220 20% 16%;
-    --muted-foreground: 215 15% 55%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
 
-    --accent: 160 50% 45%;
-    --accent-foreground: 220 30% 8%;
+    /* 5% - Prestígio: Dourado Acetinado (#C5A059) as Accent */
+    --accent: 40 48% 56%;
+    --accent-foreground: 210 17% 98%; /* White text on Gold */
+
+    /* 5% - Sucesso e Ação: Verde Esmeralda Profundo (#2D6A4F) */
+    --success: 153 40% 30%;
+    --success-foreground: 210 17% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 20% 20%;
-    --input: 220 20% 20%;
-    --ring: 45 80% 55%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    /* Ring using Dourado Acetinado */
+    --ring: 40 48% 56%; 
 
     --radius: 0.75rem;
 
-    --sidebar-background: 220 28% 10%;
-    --sidebar-foreground: 210 20% 92%;
-    --sidebar-primary: 45 80% 55%;
-    --sidebar-primary-foreground: 220 30% 8%;
-    --sidebar-accent: 220 25% 18%;
-    --sidebar-accent-foreground: 210 20% 92%;
-    --sidebar-border: 220 20% 20%;
-    --sidebar-ring: 45 80% 55%;
+    --sidebar-background: 210 17% 98%;
+    --sidebar-foreground: 221 50% 9%;
+    --sidebar-primary: 221 50% 9%;
+    --sidebar-primary-foreground: 210 17% 98%;
+    --sidebar-accent: 220 14% 96%;
+    --sidebar-accent-foreground: 221 50% 9%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 40 48% 56%;
   }
 }
 

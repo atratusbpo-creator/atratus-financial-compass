@@ -25,11 +25,11 @@ const services = [
 
 const Services = ({ onOpenQuiz }: ServicesProps) => {
   return (
-    <section id="servicos" className="py-24">
+    <section id="servicos" className="bg-background py-24">
       <div className="container mx-auto px-4">
         <div className="mb-16 text-center">
-          <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-primary">Nossos Serviços</p>
-          <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-accent">Nossos Serviços</p>
+          <h2 className="font-display text-3xl font-bold text-primary md:text-4xl">
             Soluções sob medida para sua empresa
           </h2>
         </div>
@@ -38,17 +38,17 @@ const Services = ({ onOpenQuiz }: ServicesProps) => {
           {services.map((service) => (
             <div
               key={service.title}
-              className="group rounded-2xl border border-border/50 bg-card p-8 transition-all hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5"
+              className="group rounded-2xl border border-border/50 bg-card bg-gradient-to-br from-white/60 to-transparent p-8 shadow-2xl shadow-primary/5 transition-all hover:-translate-y-2 hover:border-primary/30 hover:shadow-[0_35px_60px_-15px_rgba(11,18,33,0.3)]"
             >
-              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10">
-                <service.icon className="h-7 w-7 text-primary" />
+              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10">
+                <service.icon className="h-7 w-7 text-accent" />
               </div>
-              <h3 className="mb-3 font-display text-xl font-semibold text-foreground">{service.title}</h3>
+              <h3 className="mb-3 font-display text-xl font-semibold text-primary">{service.title}</h3>
               <p className="mb-6 text-sm leading-relaxed text-muted-foreground">{service.description}</p>
               <Button
                 variant="ghost"
                 onClick={onOpenQuiz}
-                className="px-0 text-primary hover:bg-transparent hover:text-primary/80"
+                className="px-0 text-accent hover:bg-transparent hover:text-accent/80"
               >
                 Saber Mais →
               </Button>

@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      backgroundImage: {
+        'radial-dark': 'radial-gradient(circle at center, hsl(221 50% 9%) 0%, hsl(164 50% 10%) 100%)',
+      },
       fontFamily: {
         display: ['"Playfair Display"', 'serif'],
         sans: ['Inter', 'sans-serif'],
@@ -34,6 +37,10 @@ export default {
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
