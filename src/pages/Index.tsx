@@ -1,12 +1,24 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import Plans from "@/components/Plans";
+import Footer from "@/components/Footer";
+import QuizModal from "@/components/QuizModal";
 
 const Index = () => {
+  const [quizOpen, setQuizOpen] = useState(false);
+
+  const openQuiz = () => setQuizOpen(true);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Header onOpenQuiz={openQuiz} />
+      <Hero onOpenQuiz={openQuiz} />
+      <Services onOpenQuiz={openQuiz} />
+      <Plans onOpenQuiz={openQuiz} />
+      <Footer />
+      <QuizModal open={quizOpen} onOpenChange={setQuizOpen} />
     </div>
   );
 };
